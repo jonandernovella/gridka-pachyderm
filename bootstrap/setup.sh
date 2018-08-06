@@ -23,11 +23,12 @@ tar -zxvf /tmp/helm.tar.gz -C /tmp
 sudo mv /tmp/linux-amd64/helm /usr/local/bin/helm
 
 # Install pachctl
-curl -LC - -o /tmp/pachctl.tar.gz https://github.com/pachyderm/pachyderm/releases/download/v1.7.3/pachctl_1.7.3_linux_amd64.tar.gz
-tar -zxvf /tmp/pachctl.tar.gz -C /tmp
-sudo mv /tmp/pachctl_1.7.3_linux_amd64/pachctl /usr/local/bin/pachyderm
+curl -LC - -o /tmp/pachctl.deb https://github.com/pachyderm/pachyderm/releases/download/v1.7.3/pachctl_1.7.3_amd64.deb
+sudo dpkg -i /tmp/pachctl.deb
 
 # Start minikube
 # sudo minikube start --vm-driver=none
+# Start Helm client and daemon
 # sudo helm init
+# Start Pachyderm daemon
 # sudo helm install --namespace pachyderm --name my-release stable/pachyderm
