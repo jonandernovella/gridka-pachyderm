@@ -8,7 +8,7 @@ for i in $ms1names
 do 
 echo "Downloading ms1 file $i"
 curl -L https://www.ebi.ac.uk/metabolights/MTBLS233/files/${i} -o ms1/$i.zip
-unzip $i.zip -d ./ms1/
-
+unzip ms1/$i.zip -d ./ms1/
+done
 # Wipe tar balls
 rm -r ms1/*.zip
