@@ -8,10 +8,11 @@ In this page we introduce an metabolomics preprocessing workflow that you can ru
 - [Kubernetes cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) Basic Kubernetes client commands
 - [Creating a R microservice](https://hub.docker.com/_/r-base/) Tips for creating a R Docker image
 - [Pachyderm publication](https://doi.org/10.1093/bioinformatics/bty699) Container-based bioinformatics with Pachyderm
+- [Dataset source](https://www.ebi.ac.uk/metabolights/MTBLS233) MTBLS233 study dataset
 
 ## Set up the Kubernetes infrastructure
 
-For starting up a local Kubernetes cluster run:
+Once you have logged in to your VM, you can start up a local Kubernetes cluster like so:
 ```bash
 > sudo minikube start --vm-driver=none
 ```
