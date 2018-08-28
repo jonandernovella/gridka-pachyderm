@@ -7,5 +7,9 @@ ms1names=$(cut -d, -f1 params/sampleInfo-2.csv | tail -n +2)
 for i in $ms1names
 do 
 echo "Downloading ms1 file $i"
-curl -L https://www.ebi.ac.uk/metabolights/MTBLS233/files/${i} -o ms1-2/$i
+curl -L https://www.ebi.ac.uk/metabolights/MTBLS233/files/${i} -o ms1-2/$i.tar.gz
+tar -zxvf ms1-2/$i.tar.gz -C ms1-2/
 done
+
+# Wipe tar balls
+rm -r ms1-2/*tar.gz
