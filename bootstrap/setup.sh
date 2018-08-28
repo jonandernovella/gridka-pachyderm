@@ -3,6 +3,7 @@ sudo apt-get update
 
 # Dependencies
 sudo apt-get install socat
+sudo apt-get install unzip
 curl -LC - -o /tmp/libltdl7.deb http://se.archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libltdl7_2.4.6-0.1_amd64.deb
 sudo dpkg -i /tmp/libltdl7.deb
 
